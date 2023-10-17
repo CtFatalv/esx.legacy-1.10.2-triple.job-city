@@ -1,0 +1,1 @@
+exec @vMenu/config/permissions.cfg
