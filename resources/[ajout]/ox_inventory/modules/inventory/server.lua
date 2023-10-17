@@ -158,18 +158,8 @@ local function loadInventoryData(data, player)
 
 			local model, class = lib.callback.await('ox_inventory:getVehicleData', source, data.netid)
 			local storage = Vehicles[data.type].models[model] or Vehicles[data.type][class]
-
-			if Ox then
-				local vehicle = Ox.GetVehicle(entity)
-
-				if vehicle then
-					inventory = Inventory.Create(vehicle.id or vehicle.plate, plate, data.type, storage[1], 0, storage[2], false)
-				end
-			end
-
-			if not inventory then
-				inventory = Inventory.Create(data.id, plate, data.type, storage[1], 0, storage[2], false)
-			end
+            local vehicleId = server.getOwnedVehicleId and server.getOwnedVehicleId(entity)
+            inventory = Inventory.Create(vehicleId or data.id, plate, data.type, storage[1], 0, storage[2], false)
 		end
 	elseif data.type == 'policeevidence' then
 		inventory = Inventory.Create(data.id, locale('police_evidence'), data.type, 100, 0, 100000, false)
@@ -577,12 +567,12 @@ function Inventory.Create(id, label, invType, slots, weight, maxWeight, owner, i
 				self.id = ('%s:%s'):format(self.id, owner)
 			end
 		else
-			if Ox then
-				self.dbId = id
-				self.id = (invType == 'glovebox' and 'glove' or invType)..label
-			else
-				self.dbId = label
-			end
+            if string.find(id, '^glove') or string.find(id, '^trunk') then
+                self.dbId = id:sub(6)
+            else
+                self.dbId = id
+                self.id = (invType == 'glovebox' and 'glove' or invType) .. label
+            end
 		end
 	end
 
@@ -625,6 +615,8 @@ function Inventory.Remove(inv)
 		Inventories[inv.id] = nil
 	end
 end
+
+exports('RemoveInventory', Inventory.Remove)
 
 ---Update the internal reference to vehicle stashes. Does not trigger a save or update the database.
 ---@param oldPlate string
@@ -2253,10 +2245,18 @@ local function saveInventories(clearInventories)
 	for _, inv in pairs(Inventories) do
         local index, data = prepareInventorySave(inv, buffer, time)
 
-        if index then
+        if index and data then
             total += 1
-            size[index] += 1
-            parameters[index][size[index]] = data
+
+            if index == 4 then
+                for i = 1, 3 do
+                    size[index] += 1
+                    parameters[index][size[index]] = data[i]
+                end
+            else
+                size[index] += 1
+                parameters[index][size[index]] = data
+            end
         end
 	end
 
@@ -2271,7 +2271,7 @@ local function saveInventories(clearInventories)
     for _, inv in pairs(Inventories) do
         if not inv.open and not inv.player then
             -- clear inventory from memory if unused for 10 minutes, or invalid entity
-            if time - inv.time >= 600 or (inv.netid and NetworkGetEntityFromNetworkId(inv.netid) == 0) then
+            if (not inv.netid and time - inv.time >= 600) or (inv.netid and NetworkGetEntityFromNetworkId(inv.netid) == 0) then
                 Inventory.Remove(inv)
             end
         end

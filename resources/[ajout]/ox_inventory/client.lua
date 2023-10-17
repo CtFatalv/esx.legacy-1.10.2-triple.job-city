@@ -867,9 +867,13 @@ local function updateInventory(data, weight)
 			v.inventory = 'player'
 			local item = v.item
 
-			if currentWeapon?.slot == item?.slot and item.metadata then
-				currentWeapon.metadata = item.metadata
-				TriggerEvent('ox_inventory:currentWeapon', currentWeapon)
+			if currentWeapon?.slot == item?.slot then
+                if item.metadata then
+				    currentWeapon.metadata = item.metadata
+				    TriggerEvent('ox_inventory:currentWeapon', currentWeapon)
+                else
+                    currentWeapon = Weapon.Disarm(currentWeapon, true)
+                end
 			end
 
 			local curItem = PlayerData.inventory[item.slot]
@@ -1569,7 +1573,7 @@ end)
 
 local function giveItemToTarget(serverId, slotId, count)
     if type(slotId) ~= 'number' then return TypeError('slotId', 'number', type(slotId)) end
-    if count and type(slotId) ~= 'number' then return TypeError('count', 'number', type(count)) end
+    if count and type(count) ~= 'number' then return TypeError('count', 'number', type(count)) end
 
     if slotId == currentWeapon?.slot then
         currentWeapon = Weapon.Disarm(currentWeapon)

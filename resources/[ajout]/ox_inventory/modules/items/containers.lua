@@ -50,7 +50,7 @@ local function setContainerProperties(itemName, properties)
 		whitelist = whitelist,
 	}
 end
-
+--[[
 setContainerProperties('paperbag', {
 	slots = 5,
 	maxWeight = 1000,
@@ -62,5 +62,5 @@ setContainerProperties('pizzabox', {
 	maxWeight = 1000,
 	whitelist = { 'pizza' }
 })
-
+]]
 return containers

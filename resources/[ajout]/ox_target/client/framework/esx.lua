@@ -1,6 +1,6 @@
 local ESX = exports.es_extended:getSharedObject()
 local utils = require 'client.utils'
-local groups = { 'job', 'job2', 'job3' }
+local groups = { 'job', 'job2' }
 local playerGroups = {}
 local playerItems = utils.getItems()
 local usingOxInventory = utils.hasExport('ox_inventory.Items')

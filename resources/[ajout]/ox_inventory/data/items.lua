@@ -223,8 +223,38 @@ return {
 		weight = 10,
 	},
 
-	['pochon_coke'] = {
-		label = 'Pochon de Cocaïne',
+	['radio_gps'] = {
+		label = 'Radio GPS',
+		stack = true,
+		weight = 10,
+	},
+
+	['mallette_transport'] = {
+		label = 'Mallette de Transport',
+		stack = true,
+		weight = 10,
+	},
+
+	['brique_cocaine'] = {
+		label = 'Brique de Cocaïne',
+		stack = true,
+		weight = 10,
+	},
+
+	['sachet_cocaine'] = {
+		label = 'Sachet de Cocaïne',
+		stack = true,
+		weight = 10,
+	},
+
+	['rage_impuissante'] = {
+		label = 'Rage Impuissante',
+		stack = true,
+		weight = 10,
+	},
+
+	['pack_lessive'] = {
+		label = 'Paquet de Lessive',
 		stack = true,
 		weight = 10,
 	},
@@ -247,6 +277,18 @@ return {
 		weight = 10,
 	},
 
+	['coke'] = {
+		label = 'coke d\'or',
+		stack = true,
+		weight = 10,
+	},
+
+	['coke_pooch'] = {
+		label = 'coke_pooch d\'or',
+		stack = true,
+		weight = 10,
+	},
+    
 	['diamant_box'] = {
 		label = 'Boite de diamants',
 		stack = true,
