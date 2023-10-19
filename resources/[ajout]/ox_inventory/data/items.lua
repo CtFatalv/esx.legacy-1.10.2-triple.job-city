@@ -581,14 +581,14 @@ return {
 		close = false,
 	},
 
-	['meche_casse'] = {
+	['meche_cassee'] = {
 		label = 'Mêche cassé',
 		weight = 450,
 		stack = true,
 		close = false,
 	},
 
-	['meche_titane_casser'] = {
+	['meche_titane_cassee'] = {
 		label = 'Mêche cassé en titane',
 		weight = 450,
 		stack = true,
