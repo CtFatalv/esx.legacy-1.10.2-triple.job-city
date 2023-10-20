@@ -30,7 +30,6 @@ ui_page 'html/ui.html'
 
 files {
 	'html/ui.html',
-	'html/logo.png',
 	'html/dmv.png',
 	'html/styles.css',
 	'html/questions.js',
