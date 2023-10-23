@@ -9,7 +9,6 @@ Config = {
         ['meth_pooch'] = 3400,
         --add as much as you want
     },
-    cityPoint = vector3(0.0, -500.0, 100.0), --set cityPoint to false to disable
     notify = {
 		title = 'Drogues',
         nodrugs = 'Vous n\'avez aucun médicament à vendre',

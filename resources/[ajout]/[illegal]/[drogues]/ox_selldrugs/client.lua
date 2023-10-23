@@ -5,6 +5,45 @@ cooldown = false
 cops = 0
 blips = {}
 
+-- spawn du player
+AddEventHandler('playerSpawned', function()
+	id = GetPlayerServerId(PlayerId())
+    Player(id).state:set('selldrugs', false, true)
+end)
+
+-- Création polyzone
+	local Zone = PolyZone:Create({
+  vector2(-2220.8608398438, -439.56546020508),
+  vector2(-2410.4204101562, 319.03659057618),
+  vector2(-2332.07421875, 532.0151977539),
+  vector2(-374.66, 1293.09),
+  vector2(1715.5300292968, 1325.201538086),
+  vector2(1760.9155273438, -1273.7103271484),
+  vector2(1910.3436279296, -1352.4432373046),
+  vector2(1629.648071289, -2690.7348632812),
+  vector2(1402.6340332032, -3405.7231445312),
+  vector2(-1171.8603515625, -3614.078125),
+  vector2(-2174.0354003906, -3102.8061523438),
+  vector2(-1409.8012695312, -1955.2064208984),
+  vector2(-1838.9934082032, -1321.506225586)
+}, {
+  name="Zone",
+	debugPoly = false,
+	--minZ = 30.07371520996,
+	--maxZ = 31.074838638306
+})
+
+-- Condition entrée et sortie de zone
+Zone:onPlayerInOut(function (isPointInside)
+    if isPointInside then
+        id = GetPlayerServerId(PlayerId())
+        Player(id).state:set('selldrugs', true, true)
+    else
+        id = GetPlayerServerId(PlayerId())
+        Player(id).state:set('selldrugs', false, true)
+    end
+end)
+
 Citizen.CreateThread(function()
 	while ESX.GetPlayerData().job == nil do
 		Citizen.Wait(5000)
@@ -38,6 +77,7 @@ Citizen.CreateThread(function()
 end)
 
 next_ped = function(drugToSell)
+if  Player(id).state.selldrugs then
 if IsPedInAnyVehicle(GetPlayerPed(-1), false) then
 	ESX.ShowNotification("Impossible depuis un véhicule!", "error", 3000)
 else
@@ -47,11 +87,6 @@ else
 	end
 
 	cooldown = true
-
-	if Config.cityPoint ~= false and GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), Config.cityPoint, true) > 1500.0 then
-		--ESX.ShowAdvancedNotification(Config.notify.title, '', Config.notify.toofar, 'DIA_CLIFFORD', 1)
-		return
-	end
 
 	TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_STAND_MOBILE", 0, true)
 	--ESX.ShowAdvancedNotification(Config.notify.title, '', Config.notify.searching .. drugToSell.label, 'DIA_CLIFFORD', 1)
@@ -83,18 +118,21 @@ else
 	
 	--ESX.ShowAdvancedNotification(Config.notify.title, Config.notify.approach, Config.notify.found .. npc.zone, 'DIA_CLIFFORD', 1)
 	TaskGoToEntity(npc.ped, PlayerPedId(), 60000, 4.0, 2.0, 0, 0)
-local options = {
-    {
-        name = 'Vente de drogues',
-        event = 'selldrugsselldrugs',
-        icon = 'fas fa-capsules',
-        label = 'Vente de drogues',
-		distance = 0.9,
-    },
-}label = 'Vente de drogues',
-exports.ox_target:addLocalEntity(npc.ped, options)
-        
-end
+    local options = {
+        {
+            name = 'Vente de drogues',
+            event = 'selldrugsselldrugs',
+            icon = 'fas fa-capsules',
+            label = 'Vente de drogues',
+            distance = 0.9,
+        },
+    }label = 'Vente de drogues',
+    exports.ox_target:addLocalEntity(npc.ped, options)
+
+    end
+	else
+	ESX.ShowNotification("Vous ne pouvez pas téléphoner dans cette zone!", "error", 3000)
+	end
 end
 
 AddEventHandler('selldrugsselldrugs', function(drugToSell, price)
