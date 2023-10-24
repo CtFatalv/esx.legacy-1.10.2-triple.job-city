@@ -5,12 +5,6 @@ cooldown = false
 cops = 0
 blips = {}
 
--- spawn du player
-AddEventHandler('playerSpawned', function()
-	id = GetPlayerServerId(PlayerId())
-    Player(id).state:set('selldrugs', false, true)
-end)
-
 -- Création polyzone
 	local Zone = PolyZone:Create({
   vector2(-2220.8608398438, -439.56546020508),
