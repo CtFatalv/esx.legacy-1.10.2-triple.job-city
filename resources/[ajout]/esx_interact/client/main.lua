@@ -7,10 +7,7 @@ dragStatus.isDragged =  false
 local HaveBagOnHead = false
 
 AddEventHandler('playerSpawned', function()
-	DoScreenFadeIn(2000)
 	id = GetPlayerServerId(PlayerId())
-    Player(id).state:set('HaveBagOnHead', false, true)
-	TriggerEvent('esx_interact:startcagoule')
     Player(id).state:set('HaveBagOnHead', false, true)
 end)
 
@@ -199,6 +196,11 @@ RegisterNetEvent('esx_interact:cagoule')
 AddEventHandler('esx_interact:cagoule', function()
 	isCagoule = not isCagoule
 	local playerPed = PlayerPedId()
+    local modelHash = 'prop_money_bag_01'
+    	RequestModel(modelHash)
+    while not HasModelLoaded(modelHash) do
+    	Wait(0)
+    end
 	if isCagoule then
 		Worek = CreateObject(GetHashKey("prop_money_bag_01"), 0, 0, 0, true, true, true)
 		AttachEntityToEntity(Worek, PlayerPedId(), GetPedBoneIndex(PlayerPedId(), 12844), 0.2, 0.04, 0, 0, 270.0, 60.0, true, true, false, false, 1, true) 
@@ -283,6 +285,11 @@ end)
 RegisterNetEvent('esx_interact:startcagoule')
 AddEventHandler('esx_interact:startcagoule', function()
 	local playerPed = PlayerPedId()
+    local modelHash = 'prop_money_bag_01'
+        RequestModel(modelHash)
+        while not HasModelLoaded(modelHash) do
+          Wait(0)
+        end
 		Worek = CreateObject(GetHashKey("prop_money_bag_01"), 0, 0, 0, true, true, true)
 		AttachEntityToEntity(Worek, PlayerPedId(), GetPedBoneIndex(PlayerPedId(), 12844), 0.2, 0.04, 0, 0, 270.0, 60.0, true, true, false, false, 1, true) 
 		--SetNuiFocus(false,false)
