@@ -58,6 +58,9 @@ AddEventHandler('renzu_vehicleshop:sellvehicle', function()
     local price = 1000
     local vehicle = GetVehiclePedIsIn(GetPlayerPed(source))
     local plate = GetVehicleNumberPlateText(vehicle)
+	MySQL.Async.execute("DELETE FROM `vehicle_keys` WHERE plate = @plate", { 
+        ['@plate'] = plate
+    })
     r = CustomsSQL(Config.Mysql,'fetchAll','SELECT * FROM '..vehicletable..' WHERE UPPER(TRIM(plate)) = @plate and '..owner..' = @'..owner..'',{['@plate'] = string.gsub(plate:upper(), '^%s*(.-)%s*$', '%1'), ['@'..owner..''] = xPlayer.identifier})
     if r and #r > 0 then
         local model = json.decode(r[1][vehiclemod]).model
@@ -206,13 +209,12 @@ function Buy(result,xPlayer,model, props, payment, job, type, garage, notregiste
             temp[props.plate] = true
             --TriggerClientEvent('mycarkeys:setowned',xPlayer.source,props.plate) -- sample
         else
-            print("NOT ENOUGH MONEY")
             xPlayer.showNotification('Not Enough Money',1,0,110)
             fetchdone = true
             bool = false
         end
     else
-        print("VEHICLE NOT IN DATABASE or CONFIG")
+        print("Le véhicule n'existe pas")
         xPlayer.showNotification('Vehicle does not Exist',1,0,110)
         fetchdone = true
         bool = false

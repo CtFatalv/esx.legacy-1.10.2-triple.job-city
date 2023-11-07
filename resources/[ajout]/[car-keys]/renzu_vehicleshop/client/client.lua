@@ -22,15 +22,30 @@ Citizen.CreateThread(function()
     Framework()
     Playerloaded()
     for k, v in pairs (VehicleShop) do
-        local blip = AddBlipForCoord(v.shop_x, v.shop_y, v.shop_z)
-        SetBlipSprite (blip, v.Blip.sprite)
-        SetBlipDisplay(blip, 4)
-        SetBlipScale  (blip, v.Blip.scale)
-        SetBlipColour (blip, v.Blip.color)
-        SetBlipAsShortRange(blip, true)
-        BeginTextCommandSetBlipName('STRING')
-        AddTextComponentSubstringPlayerName("Vehicle Shop: "..v.name.."")
-        EndTextCommandSetBlipName(blip)
+        if v.Blipss then
+            local blip = AddBlipForCoord(v.shop_x, v.shop_y, v.shop_z)
+            SetBlipSprite (blip, v.Blip.sprite)
+            SetBlipDisplay(blip, 4)
+            SetBlipScale  (blip, v.Blip.scale)
+            SetBlipColour (blip, v.Blip.color)
+            SetBlipAsShortRange(blip, true)
+            BeginTextCommandSetBlipName('STRING')
+            AddTextComponentSubstringPlayerName(""..v.name.."")
+            EndTextCommandSetBlipName(blip)
+        end
+    end
+    for k, v in pairs (Refund) do
+        if v.Blipss then
+            local blip = AddBlipForCoord(v.shop_x, v.shop_y, v.shop_z)
+            SetBlipSprite (blip, v.Blip.sprite)
+            SetBlipDisplay(blip, 4)
+            SetBlipScale  (blip, v.Blip.scale)
+            SetBlipColour (blip, v.Blip.color)
+            SetBlipAsShortRange(blip, true)
+            BeginTextCommandSetBlipName('STRING')
+            AddTextComponentSubstringPlayerName("Reprise de Véhicule")
+            EndTextCommandSetBlipName(blip)
+        end
     end
 end)
 RegisterNetEvent('renzu_vehicleshop:manage')
@@ -96,7 +111,7 @@ function Marker(vec,msg,event,server,dist)
     while #(vec - GetEntityCoords(PlayerPedId())) < dist and neargarage do
         Wait(0)
         DrawMarker(36, vec ,0,0,0,0,0,2.0,2.0,2.0,1.0,255, 255, 220,200,0,0,0,1)
-        ShowFloatingHelpNotification("Press [E] "..msg,vec,r)
+       -- ShowFloatingHelpNotification("Press [E] "..msg,vec,r)
         if IsControlJustReleased(0,38) then
             if not server then
                 TriggerEvent(event)
@@ -146,7 +161,7 @@ AddTarget = function(data)
 	end
 	lib.zones.box({
 		coords = vec3(data.coord.x,data.coord.y,data.coord.z),
-		size = vec3(9, 9, 9),
+		size = vec3(50, 50, 9),
 		rotation = 45,
 		debug = false,
 		inside = inside,
@@ -167,7 +182,7 @@ CreateThread(function()
             hastarget = true
         end
     end
-    while not hastarget do
+    while true do
         neargarage = false
         for k,v in pairs(VehicleShop) do
             local vec = vector3(v.shop_x,v.shop_y,v.shop_z)
@@ -176,9 +191,9 @@ CreateThread(function()
             if dist < v.Dist and not inveh then
                 neargarage = true
                 if Config.Marker then
-                    Marker(vec,v.title,'vehicleshop',false,v.Dist)
+                    --Marker(vec,v.title,'vehicleshop',false,v.Dist)
                 elseif Config.UsePopUI then
-                    PopUI(v.title or v.name,vec,"vehicleshop")
+                    --PopUI(v.title or v.name,vec,"vehicleshop")
                 end
             end
         end
@@ -202,7 +217,7 @@ CreateThread(function()
                 Wait(0)
             end
         end
-        Wait(1000)
+        Wait(0)
     end
 end)
 

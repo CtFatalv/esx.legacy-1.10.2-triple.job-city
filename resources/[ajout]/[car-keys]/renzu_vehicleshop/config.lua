@@ -2,14 +2,14 @@ Config = {}
 Config.Locale = "en"
 Config.Mysql = 'oxmysql' -- "ghmattisql", "mysql-async", "oxmysql"
 Config.framework = 'ESX' -- ESX or QBCORE
-Config.UsePopUI = true -- Create a Thread for checking playercoords and Use POPUI to Trigger Event, set this to false if using rayzone. Popui is originaly built in to RayZone -- DOWNLOAD https://github.com/renzuzu/renzu_popui
+Config.UsePopUI = false -- Create a Thread for checking playercoords and Use POPUI to Trigger Event, set this to false if using rayzone. Popui is originaly built in to RayZone -- DOWNLOAD https://github.com/renzuzu/renzu_popui
 Config.Quickpick = false -- if false system will create a garage shell and spawn every vehicle you preview
 Config.EnableTestDrive = true
 Config.PlateSpace = true -- enable / disable plate spaces (compatibility with esx 1.1?)
 Config.SaveJob = true -- this config is to save the value to owned_vehicles.job column
 Config.Licensed = false -- Enable Driver Licensed Checker
 Config.DisplayCars = true -- enable display of cars
-Config.Marker = false -- use draw marker and Iscontrollpress native , popui will not work if this is true
+Config.Marker = true -- use draw marker and Iscontrollpress native , popui will not work if this is true
 
 -- VEHICLE THUMBNAILS IMAGE
 -- this is standalone
@@ -33,15 +33,16 @@ Config.UseArenaSpawn = false -- will use custom location for spawning vehicle in
 VehicleShop = {
     ['pdm'] = { -- same with name
         name = "pdm", --LEGION
-        title = "PDM Vehicle Shop",
+        title = "Concessionnaire",
         icon = 'https://i.imgur.com/05SLYUP.png',
         type = 'car',
         job = 'all',
         default_garage = 'A',
         Dist = 4, -- distance (DEPRECATED)
         Blip = {color = 38, sprite = 595, scale = 0.9},
-        shop_x = -35.469879150391,
-        shop_y = -1100.3621826172,
+        Blipss = true,
+        shop_x = -56.9579150391, 
+        shop_y = -1098.7921826172,
         shop_z = 26.422359466553, -- coordinates for this garage
         spawn_x = -32.283363342285,
         spawn_y = -1091.0841064453,
@@ -62,7 +63,7 @@ VehicleShop = {
         job = 'police',
         type = 'car',
         default_garage = 'Police Garage',
-        Dist = 3, -- distance (DEPRECATED)
+        Dist = 10, -- distance (DEPRECATED)
         Blip = {color = 38, sprite = 662, scale = 0.9},
         shop_x = 456.89453125,
         shop_y = -1020.8922729492,
@@ -81,15 +82,16 @@ VehicleShop = {
     },
 
     -- BOAT shop
-    ['Yacht Club Boat Shop'] = { -- same with name
-        name = "Yacht Club Boat Shop", --LEGION
+    ['Yacht Club'] = { -- same with name
+        name = "Yacht Club", --LEGION
         type = 'boat', -- type of shop
-        title = "Yacht Club Boat Shop",
+        title = "Yacht Club",
         icon = 'https://i.imgur.com/62bRdH6.png',
         job = 'all',
         default_garage = 'Boat Garage A',
-        Dist = 7, -- distance (DEPRECATED)
+        Dist = 10, -- distance (DEPRECATED)
         Blip = {color = 38, sprite = 410, scale = 0.9},
+        Blipss = true,
         shop_x = -812.87133789062,
         shop_y = -1407.4493408203,
         shop_z = 5.0005192756653, -- coordinates for this garage
@@ -98,26 +100,27 @@ VehicleShop = {
         spawn_z = 0.12045155465603,
         heading = 178.27006530762, -- Vehicle spawn location
         shop = { -- if not vehicle is setup in Database SQL, we will use this
-            {shop='Yacht Club Boat Shop',brand='Normal Boat',stock=50,price=50000,model='dinghy',name="Dinghy"},
-            {shop='Yacht Club Boat Shop',brand='Normal Boat',stock=50,price=100000,model='dinghy2',name="Dinghy2"},
-            {shop='Yacht Club Boat Shop',brand='Normal Boat',stock=50,price=100000,model='dinghy3',name="Dinghy 3"},
-            {shop='Yacht Club Boat Shop',brand='Normal Boat',stock=50,price=100000,model='dinghy4',name="Dinghy4"},
-            {shop='Yacht Club Boat Shop',brand='Rich Boat',stock=50,price=100000,model='marquis',name="Marquiz"},
-            {shop='Yacht Club Boat Shop',brand='Rich Boat',stock=50,price=100000,model='toro2',name="Toro 2"},
-            {shop='Yacht Club Boat Shop',brand='Submarine',stock=50,price=100000,model='submersible',name="Submersible"},
-            {shop='Yacht Club Boat Shop',brand='Submarine',stock=50,price=100000,model='submersible2',name="Submersible2"},
+            {shop='Yacht Club',brand='Normal Boat',stock=50,price=50000,model='dinghy',name="Dinghy"},
+            {shop='Yacht Club',brand='Normal Boat',stock=50,price=100000,model='dinghy2',name="Dinghy2"},
+            {shop='Yacht Club',brand='Normal Boat',stock=50,price=100000,model='dinghy3',name="Dinghy 3"},
+            {shop='Yacht Club',brand='Normal Boat',stock=50,price=100000,model='dinghy4',name="Dinghy4"},
+            {shop='Yacht Club',brand='Normal Boat',stock=50,price=100000,model='marquis',name="Marquiz"},
+            {shop='Yacht Club',brand='Normal Boat',stock=50,price=100000,model='toro2',name="Toro 2"},
+            {shop='Yacht Club',brand='Normal Boat',stock=50,price=100000,model='submersible',name="Submersible"},
+            {shop='Yacht Club',brand='Normal Boat',stock=50,price=100000,model='submersible2',name="Submersible2"},
         },
     },
     -- PLANE SHOP
-    ['DEVIN WESTON PLANE SHOP'] = { -- same with name
-        name = "DEVIN WESTON PLANE SHOP", --LEGION
-        title = "DEVIN PLANE SHOP",
+    ['Devin Weston'] = { -- same with name
+        name = "Devin Weston", --LEGION
+        title = "Devin Weston",
         icon = 'https://i.imgur.com/12rKk6E.png',
         type = 'air', -- type of shop
         job = 'all',
         default_garage = 'Plane Hangar A',
-        Dist = 7, -- distance (DEPRECATED)
+        Dist = 10, -- distance (DEPRECATED)
         Blip = {color = 38, sprite = 423, scale = 0.9},
+        Blipss = true,
         shop_x = -916.04522705078,
         shop_y = -3025.2377929688,
         shop_z = 13.945063591003, -- coordinates for this garage
@@ -126,14 +129,14 @@ VehicleShop = {
         spawn_z = 14.783501625061,
         heading = 54.631553649902, -- Vehicle spawn location
         shop = { -- if not vehicle is setup in Database SQL, we will use this
-            {shop='DEVIN WESTON PLANE SHOP',brand='Military',stock=50,price=50000,model='hydra',name="Hydra"},
-            {shop='DEVIN WESTON PLANE SHOP',brand='Military',stock=50,price=100000,model='titan',name="Titan"},
-            {shop='DEVIN WESTON PLANE SHOP',brand='Private Plane',stock=50,price=100000,model='luxor2',name="Luxor 2"},
-            {shop='DEVIN WESTON PLANE SHOP',brand='Private Plane',stock=50,price=100000,model='luxor',name="Luxor"},
-            {shop='DEVIN WESTON PLANE SHOP',brand='Private Plane',stock=50,price=100000,model='nimbus',name="Nimbus"},
-            {shop='DEVIN WESTON PLANE SHOP',brand='Propeller Type',stock=50,price=100000,model='dodo',name="Dodo"},
-            {shop='DEVIN WESTON PLANE SHOP',brand='Propeller Type',stock=50,price=100000,model='duster',name="Duster"},
-            {shop='DEVIN WESTON PLANE SHOP',brand='Propeller Type',stock=50,price=100000,model='nokota',name="Nokota"},
+            {shop='Devin Weston',brand='Propeller Type',stock=50,price=50000,model='hydra',name="Hydra"},
+            {shop='Devin Weston',brand='Propeller Type',stock=50,price=100000,model='titan',name="Titan"},
+            {shop='Devin Weston',brand='Propeller Type',stock=50,price=100000,model='luxor2',name="Luxor 2"},
+            {shop='Devin Weston',brand='Propeller Type',stock=50,price=100000,model='luxor',name="Luxor"},
+            {shop='Devin Weston',brand='Propeller Type',stock=50,price=100000,model='nimbus',name="Nimbus"},
+            {shop='Devin Weston',brand='Propeller Type',stock=50,price=100000,model='dodo',name="Dodo"},
+            {shop='Devin Weston',brand='Propeller Type',stock=50,price=100000,model='duster',name="Duster"},
+            {shop='Devin Weston',brand='Propeller Type',stock=50,price=100000,model='nokota',name="Nokota"},
         },
     },
 }
@@ -144,11 +147,12 @@ Refund = {
     ['pdm'] = { -- same with name
         name = "pdm", --LEGION
         job = 'all',
-        Dist = 7, -- distance
-        Blip = {color = 38, sprite = 219, scale = 0.6},
-        shop_x = -46.320140838623,
-        shop_y = -1095.1837158203,
-        shop_z = 25.91579246521, -- coordinates for selling / refunding the vehicle
+        Dist = 10, -- distance (DEPRECATED)
+        Blip = {color = 38, sprite = 728, scale = 0.5},
+        Blipss = true,
+        shop_x = -45.81,
+        shop_y = -1082.62,
+        shop_z = 25.48, -- coordinates for selling / refunding the vehicle
     },
 }
 
