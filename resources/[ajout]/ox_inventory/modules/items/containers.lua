@@ -50,6 +50,7 @@ local function setContainerProperties(itemName, properties)
 		whitelist = whitelist,
 	}
 end
+
 --[[
 setContainerProperties('paperbag', {
 	slots = 5,
@@ -63,4 +64,5 @@ setContainerProperties('pizzabox', {
 	whitelist = { 'pizza' }
 })
 ]]
+
 return containers
