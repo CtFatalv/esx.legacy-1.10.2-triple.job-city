@@ -845,6 +845,7 @@ return {
 		stack = true,
 		weight = 10,
 	},
+	
 	['p_thon'] = {
 		label = 'Thon',
 		stack = true,
