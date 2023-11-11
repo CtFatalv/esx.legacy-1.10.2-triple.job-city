@@ -12,5 +12,4 @@ files {
     'nui/index.html',
     'nui/js/*.js',
     'nui/css/*.css',
-    'nui/img/*.png',
 }
