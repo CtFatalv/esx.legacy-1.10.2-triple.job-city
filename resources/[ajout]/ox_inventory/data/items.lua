@@ -1,4 +1,13 @@
 return {
+
+	['gravure_job'] = {
+		label = 'Gravure Job',
+	},
+    
+	['gravure_job2'] = {
+		label = 'Gravure Job2',
+	},
+    
 	['id_card'] = {
         label = 'ID Card',
         weight = 0,
@@ -581,14 +590,14 @@ return {
 		close = false,
 	},
 
-	['meche_cassee'] = {
+	['meche_casse'] = {
 		label = 'Mêche cassé',
 		weight = 450,
 		stack = true,
 		close = false,
 	},
 
-	['meche_titane_cassee'] = {
+	['meche_titane_casser'] = {
 		label = 'Mêche cassé en titane',
 		weight = 450,
 		stack = true,
@@ -733,6 +742,179 @@ return {
 		weight = 450,
 		stack = true,
 		close = false,
+	},
+
+	['canne'] = {
+		label = 'Canne à pêche',
+		weight = 100,
+		stack = false,
+	},
+
+	['epuisette'] = {
+		label = 'Epuisette',
+		weight = 100,
+		stack = false,
+	},
+
+	['epuisette2'] = {
+		label = 'Epuisette Trouée',
+		weight = 100,
+		stack = false,
+	},
+
+	['leurre'] = {
+		label = 'Leurre en cuivre',
+		weight = 100,
+		stack = true,
+	},
+
+	['leurre2'] = {
+		label = 'Leurre en fer',
+		weight = 100,
+		stack = true,
+	},
+
+	['leurre3'] = {
+		label = 'Leurre en titane',
+		weight = 100,
+		stack = true,
+	},
+    
+	['p_poissonchat'] = {
+		label = 'Poisson chat',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_truite'] = {
+		label = 'Truite',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_brochet'] = {
+		label = 'Brochet',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_carpe'] = {
+		label = 'Carpe',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_silure'] = {
+		label = 'Silure',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_bottec'] = {
+		label = 'Botte trouée',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_kway'] = {
+		label = 'K-Way',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_bouteille'] = {
+		label = 'Bouteille',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_filet'] = {
+		label = 'Filet',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_carton'] = {
+		label = 'Carton',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_bucket'] = {
+		label = 'bucket abimé',
+		stack = true,
+		weight = 10,
+	},
+	['p_thon'] = {
+		label = 'Thon',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_saumon'] = {
+		label = 'Saumon',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_hareng'] = {
+		label = 'Hareng',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_espadon'] = {
+		label = 'Espadon',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_poulpe'] = {
+		label = 'Poulpe',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_raie'] = {
+		label = 'Raie',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_tortue'] = {
+		label = 'Tortue',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_requin'] = {
+		label = 'Requin',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_crevette'] = {
+		label = 'Crevette',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_ecrevisse'] = {
+		label = 'Ecrevisse',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_crabe'] = {
+		label = 'Crabe',
+		stack = true,
+		weight = 10,
+	},
+
+	['p_anguille'] = {
+		label = 'Anguille',
+		stack = true,
+		weight = 10,
 	},
 
 	['beer'] = {
