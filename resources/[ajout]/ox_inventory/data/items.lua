@@ -418,12 +418,6 @@ return {
 		close = false,
 	},
 
-	['fertilisant'] = {
-		label = 'Fertilisant',
-		stack = true,
-		weight = 10,
-	},
-
     ['secateur'] = {
 		label = 'Sécateur',
 		stack = false,
