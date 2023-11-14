@@ -528,14 +528,14 @@ return {
 	},
 
    	['pochecharbon'] = {
-		label = 'Poudre de charbon',
+		label = 'Poche de charbon',
 		weight = 450,
 		stack = true,
 		close = false,
 	},
 
    	['poudrecharbon'] = {
-		label = 'Poche de charbon',
+		label = 'Poudre de charbon',
 		weight = 450,
 		stack = true,
 		close = false,
