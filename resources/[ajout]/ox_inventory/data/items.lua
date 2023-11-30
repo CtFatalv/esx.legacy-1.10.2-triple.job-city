@@ -1,5 +1,23 @@
 return {
 
+	['herse'] = {
+		label = 'Herse',
+        weight = 100,
+        stack = true,
+	},
+    
+	['cone'] = {
+		label = 'Cone',
+        weight = 100,
+        stack = true,
+	},
+    
+	['barriere'] = {
+		label = 'Barriere',
+        weight = 100,
+        stack = true,
+	},
+
 	['gravure_job'] = {
 		label = 'Gravure Job',
 	},
