@@ -187,6 +187,56 @@ return {
 	{
 		items = {
 			{
+				name = 'rabot',
+				ingredients = {
+                    cube = 2,
+				},
+				duration = 5000,
+				count = 1,
+			},
+			{
+				name = 'planche',
+				ingredients = {
+                    rabot = 0.01,
+					buche = 1,
+				},
+				duration = 5000,
+				count = 2,
+			},
+			{
+				name = 'cube',
+				ingredients = {
+                    rabot = 0.01,
+					planche = 1,
+				},
+				duration = 5000,
+				count = 2,
+			},
+			{
+				name = 'cube',
+				ingredients = {
+                    rabot = 1,
+				},
+				duration = 5000,
+				count = 1,
+			},
+		},
+		points = {
+			vec3(-556.94, 5325.56, 73.6),
+		},
+		zones = {
+			{
+				coords = vec3(-556.94, 5325.56, 73.6),
+				size = vec3(1.8, 1.0, 1.0),
+				distance = 1.5,
+				rotation = 340.0,
+			},
+		},
+		blip = { id = 478, colour = 16, scale = 0.7 },
+	},
+	{
+		items = {
+			{
 				name = 'jusorange',
 				ingredients = {
                     gobelet = 1,

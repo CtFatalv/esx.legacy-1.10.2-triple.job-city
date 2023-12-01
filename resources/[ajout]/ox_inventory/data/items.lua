@@ -672,6 +672,37 @@ return {
 		close = false,
 	},
 
+	['hache'] = {
+		label = 'Hache de bûcheron',
+		stack = false,
+		weight = 10,
+	},
+    
+	['rabot'] = {
+		label = 'Rabot',
+        decay = 100,
+		stack = false,
+		weight = 10,
+	},
+
+    ['buche'] = {
+		label = 'Bûche de bois',
+		stack = true,
+		weight = 10,
+	},
+
+    ['planche'] = {
+		label = 'Planche de bois',
+		stack = true,
+		weight = 10,
+	},
+
+    ['cube'] = {
+		label = 'Cube de bois',
+		stack = true,
+		weight = 10,
+	},
+
 	['oeuf'] = {
 		label = 'Oeuf',
 		weight = 450,
