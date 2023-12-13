@@ -19,7 +19,7 @@ Citizen.CreateThread(function()
         Wait(1)
     end
 	for index, value in pairs(npc) do
-        local npc = CreatePed(5, hash, value.x, value.y, value.z, value.h, true, false)
+        local npc = CreatePed(5, hash, value.x, value.y, value.z, value.h, false, false)
         FreezeEntityPosition(npc, true)
         SetEntityInvincible(npc, true)
         SetBlockingOfNonTemporaryEvents(npc, true)
