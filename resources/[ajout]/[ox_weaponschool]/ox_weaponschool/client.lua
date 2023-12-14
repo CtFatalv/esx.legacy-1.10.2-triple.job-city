@@ -202,6 +202,9 @@ Zone:onPlayerInOut(function (isPointInside)
 	if tw then
 		if not pw then
 			TriggerServerEvent('rWeaponSchool:zonerequest', source)
+            Citizen.Wait(500)
+			local arme = exports.ox_inventory:GetSlotIdWithItem('weapon_pistol_mk2')
+			exports.ox_inventory:useSlot(arme)
 		end
 	end
 	else  
