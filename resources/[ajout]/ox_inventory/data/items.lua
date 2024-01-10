@@ -285,66 +285,6 @@ return {
 		stack = true,
 		weight = 10,
 	},
-
-	['thermal_charge'] = {
-		label = 'Charge Thermique',
-		stack = true,
-		weight = 10,
-	},
-
-	['cash_wad'] = {
-		label = 'Liasse de billet',
-		stack = true,
-		weight = 10,
-	},
-
-	['gold_bar'] = {
-		label = 'Lingot d\'or',
-		stack = true,
-		weight = 10,
-	},
-
-	['coke'] = {
-		label = 'coke d\'or',
-		stack = true,
-		weight = 10,
-	},
-
-	['coke_pooch'] = {
-		label = 'coke_pooch d\'or',
-		stack = true,
-		weight = 10,
-	},
-    
-	['diamant_box'] = {
-		label = 'Boite de diamants',
-		stack = true,
-		weight = 10,
-	},
-
-	['card_id'] = {
-		label = 'Carte ID',
-		stack = true,
-		weight = 10,
-	},
-
-	['card_id2'] = {
-		label = 'Carte ID 2',
-		stack = true,
-		weight = 10,
-	},
-
-	['rasperry'] = {
-		label = 'Rasberry PI',
-		stack = true,
-		weight = 10,
-	},
-
-	['jewels'] = {
-		label = 'Bijoux',
-		stack = true,
-		weight = 10,
-	},
     -- Mecano
    	['gazbottle'] = {
 		label = 'Bouteille de Gaz',
@@ -1083,6 +1023,36 @@ return {
 
 	['jagercerbere'] = {
 		label = 'Jäger Cerbère',
+		stack = true,
+		weight = 10,
+	},
+
+	['boite_diamant'] = {
+		label = 'Boite de diamants',
+		stack = true,
+		weight = 10,
+	},
+    
+	['t_bag'] = {
+		label = 'Sac',
+        weight = 100,
+        stack = false,
+	},
+
+	['card_id'] = {
+		label = 'Carte ID',
+		stack = true,
+		weight = 10,
+	},
+
+	['thermal_charge'] = {
+		label = 'Charge Thermique',
+		stack = true,
+		weight = 10,
+	},
+
+	['rasperry'] = {
+		label = 'Rasberry PI',
 		stack = true,
 		weight = 10,
 	},
