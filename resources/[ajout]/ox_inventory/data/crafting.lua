@@ -57,6 +57,7 @@ return {
 				rotation = 70.0,
 			},
 		},
+        label = 'Atelier mécano',
 		blip = { id = 566, colour = 31, scale = 0.5 },
 		groups = {['mechanic'] = 0},
 	},
@@ -182,6 +183,7 @@ return {
 				rotation = 315.0,
 			},
 		},
+        label = 'Atelier Fonderie',
 		blip = { id = 477, colour = 47, scale = 0.5 },
 	},
 	{
@@ -232,6 +234,7 @@ return {
 				rotation = 340.0,
 			},
 		},
+        label = 'Atelier Menuiserier',
 		blip = { id = 478, colour = 16, scale = 0.5 },
 	},
 	{
@@ -293,6 +296,7 @@ return {
 				rotation = 315.0,
 			},
 		},
+        label = 'Atelier Vigneron',
 		blip = { id = 93, colour = 16, scale = 0.5 },
 	},
     {
@@ -327,6 +331,7 @@ return {
 				rotation = 315.0,
 			},
 		},
+        label = 'Atelier Abatteur',
 		blip = { id = 267, colour = 16, scale = 0.5 },
 	},
 	{
@@ -412,6 +417,7 @@ return {
 				rotation = 315.0,
 			},
 		},
+        label = 'Atelier Agriculteur',
 		blip = { id = 269, colour = 16, scale = 0.5 },
 	},
     {
