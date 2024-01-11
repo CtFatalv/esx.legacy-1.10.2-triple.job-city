@@ -1,25 +1,5 @@
 ESX = exports["es_extended"]:getSharedObject()
 
-local PlayerData              = {}
-
-RegisterNetEvent('esx:playerLoaded')
-AddEventHandler('esx:playerLoaded', function(xPlayer)
-  PlayerData = xPlayer
-end)
-
-RegisterNetEvent('esx:setJob')
-AddEventHandler('esx:setJob', function(job)
-  PlayerData.job = job
-end)
-
-Blip = {
-    Pos     = { x = 129.246, y = -1299.363, z = 29.501 },
-    Sprite  = 121,
-    Display = 4,
-    Scale   = 0.7,
-    Colour  = 27,
-  },
-
 Citizen.CreateThread(function()
 	nightclub = AddBlipForCoord(129.246, -1299.363, 29.501)
 	SetBlipSprite(nightclub, 121)
