@@ -232,7 +232,7 @@ return {
 				rotation = 340.0,
 			},
 		},
-		blip = { id = 478, colour = 16, scale = 0.7 },
+		blip = { id = 478, colour = 16, scale = 0.5 },
 	},
 	{
 		items = {
@@ -293,7 +293,7 @@ return {
 				rotation = 315.0,
 			},
 		},
-		blip = { id = 93, colour = 16, scale = 0.7 },
+		blip = { id = 93, colour = 16, scale = 0.5 },
 	},
     {
 		items = {

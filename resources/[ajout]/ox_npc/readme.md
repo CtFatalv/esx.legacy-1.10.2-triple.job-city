@@ -5,7 +5,7 @@ ox_inventory/data/shops.lua
 	Ammunation = {
 		name = 'Ammunation',
 		blip = {
-			id = 110, colour = 69, scale = 0.8
+			id = 110, colour = 69, scale = 0.7
 		}, inventory = {
 			{ name = 'ammo-9', price = 5, },
 			{ name = 'WEAPON_KNIFE', price = 200 },

@@ -14,7 +14,7 @@ return {
 	YouTool = {
 		name = 'YouTool',
 		blip = {
-			id = 402, colour = 69, scale = 0.8
+			id = 402, colour = 69, scale = 0.7
 		}, inventory = {
 			{ name = 'lockpick', price = 10 }
 		}, locations = {
@@ -28,7 +28,7 @@ return {
 	Ammunation = {
 		name = 'Ammunation',
 		blip = {
-			id = 110, colour = 69, scale = 0.8
+			id = 110, colour = 69, scale = 0.7
 		}, inventory = {
 			{ name = 'ammo-9', price = 5, },
 			{ name = 'WEAPON_KNIFE', price = 200 },
@@ -61,7 +61,7 @@ return {
 		name = 'Police Armoury',
 		groups = shared.police,
 		blip = {
-			id = 110, colour = 84, scale = 0.8
+			id = 110, colour = 84, scale = 0.7
 		}, inventory = {
 			{ name = 'ammo-9', price = 5, },
 			{ name = 'ammo-rifle', price = 5, },
@@ -83,7 +83,7 @@ return {
 			['ambulance'] = 3
 		},
 		blip = {
-			id = 403, colour = 69, scale = 0.8
+			id = 403, colour = 69, scale = 0.7
 		}, inventory = {
 			{ name = 'medikit', price = 26 },
 			{ name = 'bandage', price = 5 }

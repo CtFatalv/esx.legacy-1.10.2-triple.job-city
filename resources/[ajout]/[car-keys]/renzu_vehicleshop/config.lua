@@ -39,7 +39,7 @@ VehicleShop = {
         job = 'all',
         default_garage = 'A',
         Dist = 4, -- distance (DEPRECATED)
-        Blip = {color = 38, sprite = 595, scale = 0.9},
+        Blip = {color = 38, sprite = 595, scale = 0.7},
         Blipss = true,
         shop_x = -56.9579150391, 
         shop_y = -1098.7921826172,
@@ -64,7 +64,7 @@ VehicleShop = {
         type = 'car',
         default_garage = 'Police Garage',
         Dist = 10, -- distance (DEPRECATED)
-        Blip = {color = 38, sprite = 662, scale = 0.9},
+        Blip = {color = 38, sprite = 662, scale = 0.7},
         shop_x = 456.89453125,
         shop_y = -1020.8922729492,
         shop_z = 28.290912628174, -- coordinates for this garage
@@ -90,7 +90,7 @@ VehicleShop = {
         job = 'all',
         default_garage = 'Boat Garage A',
         Dist = 10, -- distance (DEPRECATED)
-        Blip = {color = 38, sprite = 410, scale = 0.9},
+        Blip = {color = 38, sprite = 410, scale = 0.7},
         Blipss = true,
         shop_x = -812.87133789062,
         shop_y = -1407.4493408203,
@@ -119,7 +119,7 @@ VehicleShop = {
         job = 'all',
         default_garage = 'Plane Hangar A',
         Dist = 10, -- distance (DEPRECATED)
-        Blip = {color = 38, sprite = 423, scale = 0.9},
+        Blip = {color = 38, sprite = 423, scale = 0.7},
         Blipss = true,
         shop_x = -916.04522705078,
         shop_y = -3025.2377929688,

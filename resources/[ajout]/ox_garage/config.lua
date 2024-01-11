@@ -418,19 +418,19 @@ Config.Blips = {
       Sprite = 359,
       Colour = 3,
       Display = 2,
-      Scale = 0.8
+      Scale = 0.7
     },
     car = {
       Sprite = 357,
       Colour = 3,
       Display = 2,
-      Scale = 0.8
+      Scale = 0.7
     },
     boat = {
       Sprite = 356,
       Colour = 3,
       Display = 2,
-      Scale =  0.8
+      Scale =  0.7
     }
   },
   Impounds = {
@@ -438,7 +438,7 @@ Config.Blips = {
       Sprite = 359,
       Colour = 51,
       Display = 2,
-      Scale = 0.8
+      Scale = 0.7
     },
     car = {
       Sprite = 477,
@@ -450,7 +450,7 @@ Config.Blips = {
       Sprite = 356,
       Colour = 51,
       Display = 2,
-      Scale =  0.8
+      Scale =  0.7
     }
   }
 }
