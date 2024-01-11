@@ -3,15 +3,15 @@ local props = {}
 Citizen.CreateThread(function()
     for i, v in ipairs (Config.locations) do
         if v.coords and v.blipss then
-            local blip = AddBlipForCoord(v.coords)
-            SetBlipSprite(blip, 110)
-            SetBlipDisplay(blip, 4)
-            SetBlipColour(blip, 47)
-            SetBlipScale(blip, 0.7)
-            SetBlipAsShortRange(blip, true)
+            local rblip = AddBlipForCoord(v.coords)
+            SetBlipSprite(rblip, 110)
+            SetBlipDisplay(rblip, 4)
+            SetBlipColour(rblip, 47)
+            SetBlipScale(rblip, 0.7)
+            SetBlipAsShortRange(rblip, true)
             BeginTextCommandSetBlipName('STRING')
             AddTextComponentString("Etabli d'Arme")
-            EndTextCommandSetBlipName(blip)
+            EndTextCommandSetBlipName(rblip)
         end
     end
 end)
