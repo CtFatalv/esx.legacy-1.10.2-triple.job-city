@@ -9,6 +9,7 @@ Citizen.CreateThread(function()
     SetBlipAsShortRange(nightclub, true)
     BeginTextCommandSetBlipName("STRING")
     AddTextComponentString("Nightclub")
+	EndTextCommandSetBlipName(nightclub)
 end)
 
 exports.ox_target:addBoxZone({
