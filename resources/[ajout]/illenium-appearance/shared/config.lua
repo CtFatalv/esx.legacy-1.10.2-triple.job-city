@@ -638,15 +638,15 @@ Config.Outfits = {
             {
                 name = "Short Sleeve",
                 outfitData = {
-                    ["pants"] = {item = 24, texture = 0}, -- Pants
-                    ["arms"] = {item = 19, texture = 0}, -- Arms
+                    ["pants"] = {item = 24, texture = 0}, -- bas du corps
+                    ["arms"] = {item = 19, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 58, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 0, texture = 0}, -- Body Vest
-                    ["torso2"] = {item = 55, texture = 0}, -- Jacket
-                    ["shoes"] = {item = 51, texture = 0}, -- Shoes
-                    ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
+                    ["vest"] = {item = 0, texture = 0}, -- 
+                    ["torso2"] = {item = 55, texture = 0}, -- vestes
+                    ["shoes"] = {item = 51, texture = 0}, -- chessures
+                    ["accessory"] = {item = 0, texture = 0}, -- echarpes et chaine
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["hat"] = {item = -1, texture = -1}, -- Hat
+                    ["hat"] = {item = -1, texture = -1}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["mask"] = {item = 0, texture = 0} -- Mask
                 },
@@ -655,15 +655,15 @@ Config.Outfits = {
             {
                 name = "Trooper Tan",
                 outfitData = {
-                    ["pants"] = {item = 24, texture = 0}, -- Pants
-                    ["arms"] = {item = 20, texture = 0}, -- Arms
+                    ["pants"] = {item = 24, texture = 0}, -- bas du corps
+                    ["arms"] = {item = 20, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 58, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 0, texture = 0}, -- Body Vest
-                    ["torso2"] = {item = 317, texture = 3}, -- Jacket
-                    ["shoes"] = {item = 51, texture = 0}, -- Shoes
-                    ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
+                    ["vest"] = {item = 0, texture = 0}, -- 
+                    ["torso2"] = {item = 317, texture = 3}, -- vestes
+                    ["shoes"] = {item = 51, texture = 0}, -- chessures
+                    ["accessory"] = {item = 0, texture = 0}, -- echarpes et chaine
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["hat"] = {item = 58, texture = 0}, -- Hat
+                    ["hat"] = {item = 58, texture = 0}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["mask"] = {item = 0, texture = 0} -- Mask
                 },
@@ -672,15 +672,15 @@ Config.Outfits = {
             {
                 name = "Long Sleeve",
                 outfitData = {
-                    ["pants"] = {item = 24, texture = 0}, -- Pants
-                    ["arms"] = {item = 20, texture = 0}, -- Arms
+                    ["pants"] = {item = 24, texture = 0}, -- bas du corps
+                    ["arms"] = {item = 20, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 58, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 0, texture = 0}, -- Body Vest
-                    ["torso2"] = {item = 317, texture = 0}, -- Jacket
-                    ["shoes"] = {item = 51, texture = 0}, -- Shoes
-                    ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
+                    ["vest"] = {item = 0, texture = 0}, -- 
+                    ["torso2"] = {item = 317, texture = 0}, -- vestes
+                    ["shoes"] = {item = 51, texture = 0}, -- chessures
+                    ["accessory"] = {item = 0, texture = 0}, -- echarpes et chaine
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["hat"] = {item = -1, texture = -1}, -- Hat
+                    ["hat"] = {item = -1, texture = -1}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["mask"] = {item = 0, texture = 0} -- Mask
                 },
@@ -689,15 +689,15 @@ Config.Outfits = {
             {
                 name = "Trooper Black",
                 outfitData = {
-                    ["pants"] = {item = 24, texture = 0}, -- Pants
-                    ["arms"] = {item = 20, texture = 0}, -- Arms
+                    ["pants"] = {item = 24, texture = 0}, -- bas du corps
+                    ["arms"] = {item = 20, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 58, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 0, texture = 0}, -- Body Vest
-                    ["torso2"] = {item = 317, texture = 8}, -- Jacket
-                    ["shoes"] = {item = 51, texture = 0}, -- Shoes
-                    ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
+                    ["vest"] = {item = 0, texture = 0}, -- 
+                    ["torso2"] = {item = 317, texture = 8}, -- vestes
+                    ["shoes"] = {item = 51, texture = 0}, -- chessures
+                    ["accessory"] = {item = 0, texture = 0}, -- echarpes et chaine
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["hat"] = {item = 58, texture = 3}, -- Hat
+                    ["hat"] = {item = 58, texture = 3}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["mask"] = {item = 0, texture = 0} -- Mask
                 },
@@ -706,14 +706,14 @@ Config.Outfits = {
             {
                 name = "SWAT",
                 outfitData = {
-                    ["pants"] = {item = 130, texture = 1}, -- Pants
-                    ["arms"] = {item = 172, texture = 0}, -- Arms
+                    ["pants"] = {item = 130, texture = 1}, -- bas du corps
+                    ["arms"] = {item = 172, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 15, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 15, texture = 2}, -- Body Vest
-                    ["torso2"] = {item = 336, texture = 3}, -- Jacket
-                    ["shoes"] = {item = 24, texture = 0}, -- Shoes
-                    ["accessory"] = {item = 133, texture = 0}, -- Neck Accessory
-                    ["hat"] = {item = 150, texture = 0}, -- Hat
+                    ["vest"] = {item = 15, texture = 2}, -- 
+                    ["torso2"] = {item = 336, texture = 3}, -- vestes
+                    ["shoes"] = {item = 24, texture = 0}, -- chessures
+                    ["accessory"] = {item = 133, texture = 0}, -- echarpes et chaine
+                    ["hat"] = {item = 150, texture = 0}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["mask"] = {item = 52, texture = 0} -- Mask
                 },
@@ -724,15 +724,15 @@ Config.Outfits = {
             {
                 name = "Short Sleeve",
                 outfitData = {
-                    ["pants"] = {item = 133, texture = 0}, -- Pants
-                    ["arms"] = {item = 31, texture = 0}, -- Arms
+                    ["pants"] = {item = 133, texture = 0}, -- bas du corps
+                    ["arms"] = {item = 31, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 35, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 34, texture = 0}, -- Body Vest
-                    ["torso2"] = {item = 48, texture = 0}, -- Jacket
-                    ["shoes"] = {item = 52, texture = 0}, -- Shoes
-                    ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
+                    ["vest"] = {item = 34, texture = 0}, -- 
+                    ["torso2"] = {item = 48, texture = 0}, -- vestes
+                    ["shoes"] = {item = 52, texture = 0}, -- chessures
+                    ["accessory"] = {item = 0, texture = 0}, -- echarpes et chaine
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["hat"] = {item = 0, texture = 0}, -- Hat
+                    ["hat"] = {item = 0, texture = 0}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["mask"] = {item = 0, texture = 0} -- Mask
                 },
@@ -741,15 +741,15 @@ Config.Outfits = {
             {
                 name = "Trooper Tan",
                 outfitData = {
-                    ["pants"] = {item = 133, texture = 0}, -- Pants
-                    ["arms"] = {item = 31, texture = 0}, -- Arms
+                    ["pants"] = {item = 133, texture = 0}, -- bas du corps
+                    ["arms"] = {item = 31, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 35, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 34, texture = 0}, -- Body Vest
-                    ["torso2"] = {item = 327, texture = 3}, -- Jacket
-                    ["shoes"] = {item = 52, texture = 0}, -- Shoes
-                    ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
+                    ["vest"] = {item = 34, texture = 0}, -- 
+                    ["torso2"] = {item = 327, texture = 3}, -- vestes
+                    ["shoes"] = {item = 52, texture = 0}, -- chessures
+                    ["accessory"] = {item = 0, texture = 0}, -- echarpes et chaine
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["hat"] = {item = 0, texture = 0}, -- Hat
+                    ["hat"] = {item = 0, texture = 0}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["mask"] = {item = 0, texture = 0} -- Mask
                 },
@@ -758,15 +758,15 @@ Config.Outfits = {
             {
                 name = "Long Sleeve",
                 outfitData = {
-                    ["pants"] = {item = 133, texture = 0}, -- Pants
-                    ["arms"] = {item = 31, texture = 0}, -- Arms
+                    ["pants"] = {item = 133, texture = 0}, -- bas du corps
+                    ["arms"] = {item = 31, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 35, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 34, texture = 0}, -- Body Vest
-                    ["torso2"] = {item = 327, texture = 0}, -- Jacket
-                    ["shoes"] = {item = 52, texture = 0}, -- Shoes
-                    ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
+                    ["vest"] = {item = 34, texture = 0}, -- 
+                    ["torso2"] = {item = 327, texture = 0}, -- vestes
+                    ["shoes"] = {item = 52, texture = 0}, -- chessures
+                    ["accessory"] = {item = 0, texture = 0}, -- echarpes et chaine
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["hat"] = {item = 0, texture = 0}, -- Hat
+                    ["hat"] = {item = 0, texture = 0}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["mask"] = {item = 0, texture = 0} -- Mask
                 },
@@ -775,15 +775,15 @@ Config.Outfits = {
             {
                 name = "Trooper Black",
                 outfitData = {
-                    ["pants"] = {item = 133, texture = 0}, -- Pants
-                    ["arms"] = {item = 31, texture = 0}, -- Arms
+                    ["pants"] = {item = 133, texture = 0}, -- bas du corps
+                    ["arms"] = {item = 31, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 35, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 34, texture = 0}, -- Body Vest
-                    ["torso2"] = {item = 327, texture = 8}, -- Jacket
-                    ["shoes"] = {item = 52, texture = 0}, -- Shoes
-                    ["accessory"] = {item = 0, texture = 0}, -- Neck Accessory
+                    ["vest"] = {item = 34, texture = 0}, -- 
+                    ["torso2"] = {item = 327, texture = 8}, -- vestes
+                    ["shoes"] = {item = 52, texture = 0}, -- chessures
+                    ["accessory"] = {item = 0, texture = 0}, -- echarpes et chaine
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["hat"] = {item = 0, texture = 0}, -- Hat
+                    ["hat"] = {item = 0, texture = 0}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["mask"] = {item = 0, texture = 0} -- Mask
                 },
@@ -792,15 +792,15 @@ Config.Outfits = {
             {
                 name = "SWAT",
                 outfitData = {
-                    ["pants"] = {item = 135, texture = 1}, -- Pants
-                    ["arms"] = {item = 213, texture = 0}, -- Arms
+                    ["pants"] = {item = 135, texture = 1}, -- bas du corps
+                    ["arms"] = {item = 213, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 0, texture = 0}, -- T Shirt
-                    ["vest"] = {item = 17, texture = 2}, -- Body Vest
-                    ["torso2"] = {item = 327, texture = 8}, -- Jacket
-                    ["shoes"] = {item = 52, texture = 0}, -- Shoes
-                    ["accessory"] = {item = 102, texture = 0}, -- Neck Accessory
+                    ["vest"] = {item = 17, texture = 2}, -- 
+                    ["torso2"] = {item = 327, texture = 8}, -- vestes
+                    ["shoes"] = {item = 52, texture = 0}, -- chessures
+                    ["accessory"] = {item = 102, texture = 0}, -- echarpes et chaine
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["hat"] = {item = 149, texture = 0}, -- Hat
+                    ["hat"] = {item = 149, texture = 0}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["mask"] = {item = 35, texture = 0} -- Mask
                 },
@@ -814,15 +814,15 @@ Config.Outfits = {
                 -- Outfits
                 name = "Worker",
                 outfitData = {
-                    ["pants"]       = { item = 28, texture = 0},  -- Pants
-                    ["arms"]        = { item = 1, texture = 0},  -- Arms
+                    ["pants"]       = { item = 28, texture = 0},  -- bas du corps
+                    ["arms"]        = { item = 1, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 31, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 294, texture = 0},  -- Jacket
-                    ["shoes"]       = { item = 10, texture = 0},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 294, texture = 0},  -- vestes
+                    ["shoes"]       = { item = 10, texture = 0},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 12, texture = -1},  -- Hat
+                    ["hat"]         = { item = 12, texture = -1},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                 },
@@ -833,15 +833,15 @@ Config.Outfits = {
             {
                 name = "Worker",
                 outfitData = {
-                    ["pants"]       = { item = 57, texture = 2},  -- Pants
-                    ["arms"]        = { item = 0, texture = 0},  -- Arms
+                    ["pants"]       = { item = 57, texture = 2},  -- bas du corps
+                    ["arms"]        = { item = 0, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 34, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 105, texture = 7},  -- Jacket
-                    ["shoes"]       = { item = 8, texture = 5},  -- Shoes
-                    ["accessory"]   = { item = 11, texture = 3},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 105, texture = 7},  -- vestes
+                    ["shoes"]       = { item = 8, texture = 5},  -- chessures
+                    ["accessory"]   = { item = 11, texture = 3},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = -1, texture = -1},  -- Hat
+                    ["hat"]         = { item = -1, texture = -1},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                 },
@@ -854,17 +854,17 @@ Config.Outfits = {
             {
                 name = "T-Shirt",
                 outfitData = {
-                    ["arms"] = {item = 85, texture = 0}, -- Arms
+                    ["arms"] = {item = 85, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 129, texture = 0}, -- T-Shirt
-                    ["torso2"] = {item = 250, texture = 0}, -- Jackets
+                    ["torso2"] = {item = 250, texture = 0}, -- vestess
                     ["vest"] = {item = 0, texture = 0}, -- Vest
                     ["decals"] = {item = 58, texture = 0}, -- Decals
                     ["accessory"] = {item = 127, texture = 0}, -- Neck
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["pants"] = {item = 96, texture = 0}, -- Pants
-                    ["shoes"] = {item = 54, texture = 0}, -- Shoes
+                    ["pants"] = {item = 96, texture = 0}, -- bas du corps
+                    ["shoes"] = {item = 54, texture = 0}, -- chessures
                     ["mask"] = {item = 121, texture = 0}, -- Mask
-                    ["hat"] = {item = 122, texture = 0}, -- Hat
+                    ["hat"] = {item = 122, texture = 0}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
@@ -873,17 +873,17 @@ Config.Outfits = {
             {
                 name = "Polo",
                 outfitData = {
-                    ["arms"] = {item = 90, texture = 0}, -- Arms
+                    ["arms"] = {item = 90, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 15, texture = 0}, -- T-Shirt
-                    ["torso2"] = {item = 249, texture = 0}, -- Jackets
+                    ["torso2"] = {item = 249, texture = 0}, -- vestess
                     ["vest"] = {item = 0, texture = 0}, -- Vest
                     ["decals"] = {item = 57, texture = 0}, -- Decals
                     ["accessory"] = {item = 126, texture = 0}, -- Neck
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["pants"] = {item = 96, texture = 0}, -- Pants
-                    ["shoes"] = {item = 54, texture = 0}, -- Shoes
+                    ["pants"] = {item = 96, texture = 0}, -- bas du corps
+                    ["shoes"] = {item = 54, texture = 0}, -- chessures
                     ["mask"] = {item = 121, texture = 0}, -- Mask
-                    ["hat"] = {item = 122, texture = 0}, -- Hat
+                    ["hat"] = {item = 122, texture = 0}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
@@ -892,17 +892,17 @@ Config.Outfits = {
             {
                 name = "Doctor",
                 outfitData = {
-                    ["arms"] = {item = 93, texture = 0}, -- Arms
+                    ["arms"] = {item = 93, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 32, texture = 3}, -- T-Shirt
-                    ["torso2"] = {item = 31, texture = 7}, -- Jackets
+                    ["torso2"] = {item = 31, texture = 7}, -- vestess
                     ["vest"] = {item = 0, texture = 0}, -- Vest
                     ["decals"] = {item = 0, texture = 0}, -- Decals
                     ["accessory"] = {item = 126, texture = 0}, -- Neck
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["pants"] = {item = 28, texture = 0}, -- Pants
-                    ["shoes"] = {item = 10, texture = 0}, -- Shoes
+                    ["pants"] = {item = 28, texture = 0}, -- bas du corps
+                    ["shoes"] = {item = 10, texture = 0}, -- chessures
                     ["mask"] = {item = 0, texture = 0}, -- Mask
-                    ["hat"] = {item = -1, texture = 0}, -- Hat
+                    ["hat"] = {item = -1, texture = 0}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
@@ -913,17 +913,17 @@ Config.Outfits = {
             {
                 name = "T-Shirt",
                 outfitData = {
-                    ["arms"] = {item = 109, texture = 0}, -- Arms
+                    ["arms"] = {item = 109, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 159, texture = 0}, -- T-Shirt
-                    ["torso2"] = {item = 258, texture = 0}, -- Jackets
+                    ["torso2"] = {item = 258, texture = 0}, -- vestess
                     ["vest"] = {item = 0, texture = 0}, -- Vest
                     ["decals"] = {item = 66, texture = 0}, -- Decals
                     ["accessory"] = {item = 97, texture = 0}, -- Neck
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["pants"] = {item = 99, texture = 0}, -- Pants
-                    ["shoes"] = {item = 55, texture = 0}, -- Shoes
+                    ["pants"] = {item = 99, texture = 0}, -- bas du corps
+                    ["shoes"] = {item = 55, texture = 0}, -- chessures
                     ["mask"] = {item = 121, texture = 0}, -- Mask
-                    ["hat"] = {item = 121, texture = 0}, -- Hat
+                    ["hat"] = {item = 121, texture = 0}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
@@ -932,17 +932,17 @@ Config.Outfits = {
             {
                 name = "Polo",
                 outfitData = {
-                    ["arms"] = {item = 105, texture = 0}, -- Arms
+                    ["arms"] = {item = 105, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 13, texture = 0}, -- T-Shirt
-                    ["torso2"] = {item = 257, texture = 0}, -- Jackets
+                    ["torso2"] = {item = 257, texture = 0}, -- vestess
                     ["vest"] = {item = 0, texture = 0}, -- Vest
                     ["decals"] = {item = 65, texture = 0}, -- Decals
                     ["accessory"] = {item = 96, texture = 0}, -- Neck
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["pants"] = {item = 99, texture = 0}, -- Pants
-                    ["shoes"] = {item = 55, texture = 0}, -- Shoes
+                    ["pants"] = {item = 99, texture = 0}, -- bas du corps
+                    ["shoes"] = {item = 55, texture = 0}, -- chessures
                     ["mask"] = {item = 121, texture = 0}, -- Mask
-                    ["hat"] = {item = 121, texture = 0}, -- Hat
+                    ["hat"] = {item = 121, texture = 0}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
@@ -951,17 +951,17 @@ Config.Outfits = {
             {
                 name = "Doctor",
                 outfitData = {
-                    ["arms"] = {item = 105, texture = 0}, -- Arms
+                    ["arms"] = {item = 105, texture = 0}, -- haut du corps
                     ["t-shirt"] = {item = 39, texture = 3}, -- T-Shirt
-                    ["torso2"] = {item = 7, texture = 1}, -- Jackets
+                    ["torso2"] = {item = 7, texture = 1}, -- vestess
                     ["vest"] = {item = 0, texture = 0}, -- Vest
                     ["decals"] = {item = 0, texture = 0}, -- Decals
                     ["accessory"] = {item = 96, texture = 0}, -- Neck
                     ["bag"] = {item = 0, texture = 0}, -- Bag
-                    ["pants"] = {item = 34, texture = 0}, -- Pants
-                    ["shoes"] = {item = 29, texture = 0}, -- Shoes
+                    ["pants"] = {item = 34, texture = 0}, -- bas du corps
+                    ["shoes"] = {item = 29, texture = 0}, -- chessures
                     ["mask"] = {item = 0, texture = 0}, -- Mask
-                    ["hat"] = {item = -1, texture = 0}, -- Hat
+                    ["hat"] = {item = -1, texture = 0}, -- chapeaux
                     ["glass"] = {item = 0, texture = 0}, -- Glasses
                     ["ear"] = {item = 0, texture = 0} -- Ear accessories
                 },
@@ -975,15 +975,15 @@ Config.Outfits = {
                 -- Outfits
                 name = "Barman",
                 outfitData = {
-                    ["pants"]       = { item = 28, texture = 2},  -- Pants
-                    ["arms"]        = { item = 40, texture = 0},  -- Arms
+                    ["pants"]       = { item = 28, texture = 2},  -- bas du corps
+                    ["arms"]        = { item = 40, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 15, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 40, texture = 0},  -- Jacket
-                    ["shoes"]       = { item = 38, texture = 4},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 40, texture = 0},  -- vestes
+                    ["shoes"]       = { item = 38, texture = 4},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = -1},  -- Hat
+                    ["hat"]         = { item = 0, texture = -1},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 118, texture = 0},  -- Chain
@@ -993,15 +993,15 @@ Config.Outfits = {
             {
                 name = "Danceur/se_1",
                 outfitData = {
-                    ["pants"]       = { item = 61, texture = 9},  -- Pants
-                    ["arms"]        = { item = 40, texture = 0},  -- Arms
+                    ["pants"]       = { item = 61, texture = 9},  -- bas du corps
+                    ["arms"]        = { item = 40, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 15, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 15, texture = 0},  -- Jacket
-                    ["shoes"]       = { item = 16, texture = 9},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 15, texture = 0},  -- vestes
+                    ["shoes"]       = { item = 16, texture = 9},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 118, texture = 0},  -- Chain
@@ -1011,15 +1011,15 @@ Config.Outfits = {
             {
                 name = "Danceur/se_2",
                 outfitData = {
-                    ["pants"]       = { item = 4, texture = 0},  -- Pants
-                    ["arms"]        = { item = 14, texture = 0},  -- Arms
+                    ["pants"]       = { item = 4, texture = 0},  -- bas du corps
+                    ["arms"]        = { item = 14, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 15, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 62, texture = 0},  -- Jacket
-                    ["shoes"]       = { item = 34, texture = 0},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 62, texture = 0},  -- vestes
+                    ["shoes"]       = { item = 34, texture = 0},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 118, texture = 0},  -- Chain
@@ -1029,15 +1029,15 @@ Config.Outfits = {
             {
                 name = "Danceur/se_3",
                 outfitData = {
-                    ["pants"]       = { item = 4, texture = 0},  -- Pants
-                    ["arms"]        = { item = 15, texture = 0},  -- Arms
+                    ["pants"]       = { item = 4, texture = 0},  -- bas du corps
+                    ["arms"]        = { item = 15, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 15, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 15, texture = 0},  -- Jacket
-                    ["shoes"]       = { item = 34, texture = 0},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 15, texture = 0},  -- vestes
+                    ["shoes"]       = { item = 34, texture = 0},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 118, texture = 0},  -- Chain
@@ -1047,15 +1047,15 @@ Config.Outfits = {
             {
                 name = "Danceur/se_4",
                 outfitData = {
-                    ["pants"]       = { item = 61, texture = 5},  -- Pants
-                    ["arms"]        = { item = 15, texture = 0},  -- Arms
+                    ["pants"]       = { item = 61, texture = 5},  -- bas du corps
+                    ["arms"]        = { item = 15, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 15, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 15, texture = 0},  -- Jacket
-                    ["shoes"]       = { item = 34, texture = 0},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 15, texture = 0},  -- vestes
+                    ["shoes"]       = { item = 34, texture = 0},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 118, texture = 0},  -- Chain
@@ -1065,15 +1065,15 @@ Config.Outfits = {
             {
                 name = "Danceur/se_5",
                 outfitData = {
-                    ["pants"]       = { item = 15, texture = 0},  -- Pants
-                    ["arms"]        = { item = 15, texture = 0},  -- Arms
+                    ["pants"]       = { item = 15, texture = 0},  -- bas du corps
+                    ["arms"]        = { item = 15, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 15, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 15, texture = 0},  -- Jacket
-                    ["shoes"]       = { item = 34, texture = 0},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 15, texture = 0},  -- vestes
+                    ["shoes"]       = { item = 34, texture = 0},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 118, texture = 0},  -- Chain
@@ -1083,15 +1083,15 @@ Config.Outfits = {
             {
                 name = "Danceur/se_6",
                 outfitData = {
-                    ["pants"]       = { item = 81, texture = 0},  -- Pants
-                    ["arms"]        = { item = 15, texture = 0},  -- Arms
+                    ["pants"]       = { item = 81, texture = 0},  -- bas du corps
+                    ["arms"]        = { item = 15, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 3, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 15, texture = 0},  -- Jacket
-                    ["shoes"]       = { item = 34, texture = 0},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 15, texture = 0},  -- vestes
+                    ["shoes"]       = { item = 34, texture = 0},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 118, texture = 0},  -- Chain
@@ -1101,15 +1101,15 @@ Config.Outfits = {
             {
                 name = "Danceur/se_7",
                 outfitData = {
-                    ["pants"]       = { item = 61, texture = 9},  -- Pants
-                    ["arms"]        = { item = 40, texture = 0},  -- Arms
+                    ["pants"]       = { item = 61, texture = 9},  -- bas du corps
+                    ["arms"]        = { item = 40, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 15, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 15, texture = 0},  -- Jacket
-                    ["shoes"]       = { item = 16, texture = 9},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 15, texture = 0},  -- vestes
+                    ["shoes"]       = { item = 16, texture = 9},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 118, texture = 0},  -- Chain
@@ -1121,15 +1121,15 @@ Config.Outfits = {
             {
                 name = "Barman",
                 outfitData = {
-                    ["pants"]       = { item = 44, texture = 4},  -- Pants
-                    ["arms"]        = { item = 5, texture = 0},  -- Arms
+                    ["pants"]       = { item = 44, texture = 4},  -- bas du corps
+                    ["arms"]        = { item = 5, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 3, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 8, texture = 2},  -- Jacket
-                    ["shoes"]       = { item = 0, texture = 0},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 8, texture = 2},  -- vestes
+                    ["shoes"]       = { item = 0, texture = 0},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 0, texture = 2},  -- Chain
@@ -1139,15 +1139,15 @@ Config.Outfits = {
 			{
                 name = "Danceur/se_1",
                 outfitData = {
-                    ["pants"]       = { item = 22, texture = 0},  -- Pants
-                    ["arms"]        = { item = 4, texture = 0},  -- Arms
+                    ["pants"]       = { item = 22, texture = 0},  -- bas du corps
+                    ["arms"]        = { item = 4, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 3, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 22, texture = 0},  -- Jacket
-                    ["shoes"]       = { item = 18, texture = 0},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 22, texture = 0},  -- vestes
+                    ["shoes"]       = { item = 18, texture = 0},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 61, texture = 1},  -- Chain
@@ -1157,15 +1157,15 @@ Config.Outfits = {
             {
                 name = "Danceur/se_2",
                 outfitData = {
-                    ["pants"]       = { item = 20, texture = 2},  -- Pants
-                    ["arms"]        = { item = 4, texture = 0},  -- Arms
+                    ["pants"]       = { item = 20, texture = 2},  -- bas du corps
+                    ["arms"]        = { item = 4, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 3, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 22, texture = 2},  -- Jacket
-                    ["shoes"]       = { item = 18, texture = 2},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 22, texture = 2},  -- vestes
+                    ["shoes"]       = { item = 18, texture = 2},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 0, texture = 0},  -- Chain
@@ -1175,15 +1175,15 @@ Config.Outfits = {
             {
                 name = "Danceur/se_3",
                 outfitData = {
-                    ["pants"]       = { item = 19, texture = 1},  -- Pants
-                    ["arms"]        = { item = 15, texture = 0},  -- Arms
+                    ["pants"]       = { item = 19, texture = 1},  -- bas du corps
+                    ["arms"]        = { item = 15, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 3, texture = 2},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 22, texture = 1},  -- Jacket
-                    ["shoes"]       = { item = 19, texture = 3},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 22, texture = 1},  -- vestes
+                    ["shoes"]       = { item = 19, texture = 3},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 0, texture = 0},  -- Chain
@@ -1193,15 +1193,15 @@ Config.Outfits = {
             {
                 name = "Danceur/se_4",
                 outfitData = {
-                    ["pants"]       = { item = 63, texture = 11},  -- Pants
-                    ["arms"]        = { item = 15, texture = 0},  -- Arms
+                    ["pants"]       = { item = 63, texture = 11},  -- bas du corps
+                    ["arms"]        = { item = 15, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 3, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 82, texture = 0},  -- Jacket
-                    ["shoes"]       = { item = 41, texture = 11},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 82, texture = 0},  -- vestes
+                    ["shoes"]       = { item = 41, texture = 11},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 0, texture = 0},  -- Chain
@@ -1211,15 +1211,15 @@ Config.Outfits = {
             {
                 name = "Danceur/se_5",
                 outfitData = {
-                    ["pants"]       = { item = 63, texture = 2},  -- Pants
-                    ["arms"]        = { item = 15, texture = 0},  -- Arms
+                    ["pants"]       = { item = 63, texture = 2},  -- bas du corps
+                    ["arms"]        = { item = 15, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 3, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 15, texture = 0},  -- Jacket
-                    ["shoes"]       = { item = 41, texture = 2},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 15, texture = 0},  -- vestes
+                    ["shoes"]       = { item = 41, texture = 2},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 0, texture = 0},  -- Chain
@@ -1229,15 +1229,15 @@ Config.Outfits = {
             {
                 name = "Danceur/se_6",
                 outfitData = {
-                    ["pants"]       = { item = 63, texture = 10},  -- Pants
-                    ["arms"]        = { item = 15, texture = 0},  -- Arms
+                    ["pants"]       = { item = 63, texture = 10},  -- bas du corps
+                    ["arms"]        = { item = 15, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 3, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 18, texture = 3},  -- Jacket
-                    ["shoes"]       = { item = 41, texture = 10},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 18, texture = 3},  -- vestes
+                    ["shoes"]       = { item = 41, texture = 10},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 0, texture = 0},  -- Chain
@@ -1247,15 +1247,15 @@ Config.Outfits = {
             {
                 name = "Danceur/se_7",
                 outfitData = {
-                    ["pants"]       = { item = 63, texture = 6},  -- Pants
-                    ["arms"]        = { item = 15, texture = 0},  -- Arms
+                    ["pants"]       = { item = 63, texture = 6},  -- bas du corps
+                    ["arms"]        = { item = 15, texture = 0},  -- haut du corps
                     ["t-shirt"]     = { item = 3, texture = 0},  -- T Shirt
-                    ["vest"]        = { item = 0, texture = 0},  -- Body Vest
-                    ["torso2"]      = { item = 111, texture = 6},  -- Jacket
-                    ["shoes"]       = { item = 41, texture = 6},  -- Shoes
-                    ["accessory"]   = { item = 0, texture = 0},  -- Neck Accessory
+                    ["vest"]        = { item = 0, texture = 0},  -- 
+                    ["torso2"]      = { item = 111, texture = 6},  -- vestes
+                    ["shoes"]       = { item = 41, texture = 6},  -- chessures
+                    ["accessory"]   = { item = 0, texture = 0},  -- echarpes et chaine
                     ["bag"]         = { item = 0, texture = 0},  -- Bag
-                    ["hat"]         = { item = 0, texture = 0},  -- Hat
+                    ["hat"]         = { item = 0, texture = 0},  -- chapeaux
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
                     ["chain_1"]     = { item = 0, texture = 0},  -- Chain
@@ -1301,7 +1301,7 @@ Config.InitialPlayerClothes = {
                 texture = 0
             },
             {
-                component_id = 6, -- Shoes
+                component_id = 6, -- chessures
                 drawable = 0,
                 texture = 0
             },
@@ -1326,14 +1326,14 @@ Config.InitialPlayerClothes = {
                 texture = 0
             },
             {
-                component_id = 11, -- Jacket
+                component_id = 11, -- vestes
                 drawable = 0,
                 texture = 0
             }
         },
         Props = {
             {
-                prop_id = 0, -- Hat
+                prop_id = 0, -- chapeaux
                 drawable = -1,
                 texture = -1
             },
@@ -1399,7 +1399,7 @@ Config.InitialPlayerClothes = {
                 texture = 0
             },
             {
-                component_id = 6, -- Shoes
+                component_id = 6, -- chessures
                 drawable = 0,
                 texture = 0
             },
@@ -1424,14 +1424,14 @@ Config.InitialPlayerClothes = {
                 texture = 0
             },
             {
-                component_id = 11, -- Jacket
+                component_id = 11, -- vestes
                 drawable = 0,
                 texture = 0
             }
         },
         Props = {
             {
-                prop_id = 0, -- Hat
+                prop_id = 0, -- chapeaux
                 drawable = -1,
                 texture = -1
             },
