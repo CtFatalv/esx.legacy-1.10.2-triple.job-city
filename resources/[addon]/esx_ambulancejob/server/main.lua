@@ -359,3 +359,8 @@ AddEventHandler('esx_ambulancejob:setDeathStatus', function(isDead)
 	end
 
 end)
+
+RegisterServerEvent('esx_ambulancejob:sendems')
+AddEventHandler('esx_ambulancejob:sendems', function(coords)
+    TriggerClientEvent('esx_ambulancejob:sendems', -1, coords)
+end)

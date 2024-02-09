@@ -1,4 +1,5 @@
 local firstSpawn = true
+blipss = {}
 
 isDead, isSearched, medic = false, false, 0
 
@@ -184,8 +185,38 @@ function SendDistressSignal()
   local coords = GetEntityCoords(playerPed)
 
   ESX.ShowNotification(TranslateCap('distress_sent'))
-  TriggerServerEvent('esx_ambulancejob:onPlayerDistress')
+  TriggerServerEvent('esx_ambulancejob:sendems', coords)
+    print(coords)
+ -- TriggerServerEvent('esx_ambulancejob:onPlayerDistress')
 end
+
+RegisterNetEvent('esx_ambulancejob:sendems')
+AddEventHandler('esx_ambulancejob:sendems', function(coords)
+    local player = ESX.GetPlayerData()
+    if player.job.name == "ambulance" then
+	--if PlayerData.job ~= nil and PlayerData.job.name == 'police' then
+	--if PlayerData.job.name == 'police' then
+		street = GetStreetNameAtCoord(coords.x, coords.y, coords.z)
+		street2 = GetStreetNameFromHashKey(street)
+--		ESX.ShowAdvancedNotification(Config.notify.police_notify_title, Config.notify.police_notify_subtitle, street2, "CHAR_CALL911", 1)
+		PlaySoundFrontend(-1, "Bomb_Disarmed", "GTAO_Speed_Convoy_Soundset", 0)
+
+		blipems = AddBlipForCoord(coords)
+		SetBlipSprite(blipems, 310)
+		SetBlipColour(blipems, 3)
+		SetBlipAlpha(blipems, 250)
+		SetBlipScale(blipems, 1.0)
+		BeginTextCommandSetBlipName("STRING")
+		AddTextComponentString('Personne au sol')
+		EndTextCommandSetBlipName(blipems)
+		table.insert(blipss, blipems)
+		Citizen.Wait(180000)
+		for i in pairs(blipss) do
+			RemoveBlip(blipss[i])
+			blipss[i] = nil
+		end
+	end
+end)
 
 function DrawGenericTextThisFrame()
   SetTextFont(4)

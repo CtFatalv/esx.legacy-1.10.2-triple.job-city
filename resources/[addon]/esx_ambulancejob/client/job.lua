@@ -173,7 +173,7 @@ end)
 
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob', function(job)
-	if isOnDuty and job.name ~= 'ambulance' then
+	if job.name ~= 'ambulance' then
 		for playerId,v in pairs(deadPlayerBlips) do
 			if Config.Debug then 
 				print("[^2INFO^7] Removing dead blip - ^5" .. tostring(playerId).. "^7")
@@ -210,7 +210,7 @@ RegisterNetEvent('esx_ambulancejob:setDeadPlayers')
 AddEventHandler('esx_ambulancejob:setDeadPlayers', function(_deadPlayers)
 	deadPlayers = _deadPlayers
 
-	if isOnDuty then
+	--if isOnDuty then
 		for playerId,v in pairs(deadPlayerBlips) do
 			RemoveBlip(v)
 			deadPlayerBlips[playerId] = nil
@@ -240,7 +240,7 @@ AddEventHandler('esx_ambulancejob:setDeadPlayers', function(_deadPlayers)
 				deadPlayerBlips[playerId] = blip
 			end
 		end
-	end
+	--end
 end)
 
 
@@ -248,7 +248,7 @@ RegisterNetEvent('esx_ambulancejob:PlayerDistressed')
 AddEventHandler('esx_ambulancejob:PlayerDistressed', function(Player)
 	deadPlayers[Player] = 'distress'
 
-	if isOnDuty then
+	--if isOnDuty then
 		if Config.Debug then 
 			print("[^2INFO^7] Player Distress Recived - ID:^5" .. tostring(Player) .. "^7")
 		end
@@ -268,7 +268,7 @@ AddEventHandler('esx_ambulancejob:PlayerDistressed', function(Player)
 				EndTextCommandSetBlipName(blip)
 
 				deadPlayerBlips[Player] = blip
-	end
+	--end
 end)
 
 AddEventHandler('esx_ambulancejob:factureems', function()	
